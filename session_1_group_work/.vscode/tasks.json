@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile-test-date-utils",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build", "build",       // Build directory
+                "--target", "TestDateUtils" // Build the TestDateUtils target
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": "build"
+        },
+        {
+            "label": "compile-test-string-manipulation",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build", "build",       // Build directory
+                "--target", "TestStringManipulation" // Build the TestStringManipulation target
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": "build"
+        }
+    ]
+}
