@@ -5,7 +5,8 @@ find_package(GTest REQUIRED)
 add_executable(TestUserManager TestUserManager.cpp)
 
 # Link the test executable with the library and GTest
-target_link_libraries(TestUserManager UserManager GTest::GTest GTest::Main)
+target_link_libraries(TestUserManager UserManager GTest::GTest GTest::Main GTest::gmock 
+GTest::gmock_main)
 
 # Register the test with CTest
 add_test(NAME UserManagerTests COMMAND TestUserManager)

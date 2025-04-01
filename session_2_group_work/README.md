@@ -3,7 +3,7 @@
 - gtests
 
 ```
-sudo apt-get install cmake libgtest-dev
+sudo apt-get install cmake libgtest-dev libgmock-dev
 ```
 
 # Plugins
